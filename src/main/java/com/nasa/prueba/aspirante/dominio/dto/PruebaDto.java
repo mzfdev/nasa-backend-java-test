@@ -13,13 +13,12 @@ public class PruebaDto {
 		super();
 	}
 
-	public PruebaDto(String href, String center, String title, String nasa_id, LocalDateTime created_at) {
+	public PruebaDto(String href, String center, String title, String nasa_id) {
 		super();
 		this.href = href;
 		this.center = center;
 		this.title = title;
 		this.nasa_id = nasa_id;
-		this.created_at = created_at;
 	}
 
 	public String getHref() {
