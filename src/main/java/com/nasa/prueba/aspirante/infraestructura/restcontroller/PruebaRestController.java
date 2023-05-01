@@ -1,5 +1,6 @@
 package com.nasa.prueba.aspirante.infraestructura.restcontroller;
 
+import java.util.Comparator;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,6 +26,7 @@ public class PruebaRestController {
 	public ResponseEntity<List<PruebaEntity>> ObtenerPruebas(){
 		try {
 			List<PruebaEntity> pruebas = pruebaService.obtenerPruebaEntities();
+			pruebas.sort(Comparator.comparingLong(PruebaEntity::getId).reversed());
 			return new ResponseEntity<>(
 					pruebas,
 					HttpStatus.OK
