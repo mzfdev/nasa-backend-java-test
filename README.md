@@ -201,6 +201,8 @@ Que se pueda consumir el servicio  explicada en el apartado API NASA; esta tarea
 ### Tarea 3
 Crear una API del tipo GET con la cual podamos extraer los datos guardado en la DB y poder visualizarlos en POSTMAN en forma de listado, estos deben ser listado de manera descendente por ID. 
 
+Ruta para probar GET : http://localhost:8080/Pruebas/Pruebas_view
+
 También esperamos que su código sea un reflejo de usted mismo en el trabajo, por lo que estaremos atentos a las elecciones que hará con respecto a la legibilidad y rendimiento del código.
 
 ## Submission
